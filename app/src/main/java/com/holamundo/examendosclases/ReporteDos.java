@@ -18,9 +18,12 @@ public class ReporteDos extends Activity {
         setContentView(R.layout.activity_reporte_dos);
         tabla = findViewById(R.id.tabla);
         celulares = Datos.obtener();
-
+          String marca;
+          int cap, pos=1;
         for (int i = 0; i < celulares.size(); i++) {
-            if (celulares.get(i).getMarca().equalsIgnoreCase("Samsung")&&celulares.get(i).getRam()>=2&&celulares.get(i).getRam()<=4){
+             marca = celulares.get(i).getMarca().toString();
+             cap= celulares.get(i).getRam();
+            if (marca.equalsIgnoreCase("Samsung")&& cap>=2 && cap<=4){
                 TableRow fila = new TableRow(this);
                 TextView c1 = new TextView(this);
                 TextView c2 = new TextView(this);
@@ -29,8 +32,7 @@ public class ReporteDos extends Activity {
                 TextView c5 = new TextView(this);
                 TextView c6 = new TextView(this);
 
-                int pos = i+1;
-                c1.setText("" + pos);
+                c1.setText("" + pos++);
                 c2.setText(celulares.get(i).getColor());
                 c3.setText(celulares.get(i).getMarca());
                 c4.setText(celulares.get(i).getSistOp());

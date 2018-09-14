@@ -55,4 +55,5 @@
         <item>@string/reportes</item>
     </string-array>
     <string name="guardado">!Celular Registrado Exitosamente¡</string>
+    <string name="mensaje4">Cantidad celulares Apple Negro es:</string>
 </resources>
