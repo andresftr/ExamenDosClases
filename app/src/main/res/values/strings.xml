@@ -45,7 +45,6 @@
     <string name="reporte3">Reporte 3</string>
     <string name="reporte4">Reporte 4</string>
     <string-array name="opReportes">
-        <item>@string/seleccione</item>
         <item>@string/reporte2</item>
         <item>@string/reporte3</item>
         <item>@string/reporte4</item>
@@ -55,4 +54,5 @@
         <item>@string/listar</item>
         <item>@string/reportes</item>
     </string-array>
+    <string name="guardado">!Celular Registrado Exitosamente¡</string>
 </resources>

@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 public class Registrar extends Activity {
     private Spinner cmbMarca, cmbColor, cmbSistOp;
@@ -51,5 +52,9 @@ public class Registrar extends Activity {
 
         Celular cel = new Celular(marca,color,sistOperativo,ram,precio);
         cel.guardar();
+
+        Toast.makeText(this,recursos.getString(R.string.guardado),Toast.LENGTH_SHORT).show();
     }
+
+
 }
