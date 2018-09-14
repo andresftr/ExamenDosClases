@@ -56,5 +56,20 @@ public class Registrar extends Activity {
         Toast.makeText(this,recursos.getString(R.string.guardado),Toast.LENGTH_SHORT).show();
     }
 
+    public void limpiar(View v){
+        borrar();
+    }
+
+    public void borrar(){
+        cmbMarca.setSelection(0);
+        cmbColor.setSelection(0);
+        cmbSistOp.setSelection(0);
+        txtPrecio.setText("");
+        txtRam.setText("");
+        cmbMarca.requestFocus();
+
+
+    }
+
 
 }
