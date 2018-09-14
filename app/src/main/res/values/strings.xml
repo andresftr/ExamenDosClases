@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">ExamenDosClases</string>
+    <string name="opciones">Opciones</string>
+    <string name="registrar">Registrar</string>
+    <string name="marca">Marca</string>
+    <string name="sistema_operativo">Sistema Operativo</string>
+    <string name="color">Color</string>
+    <string name="capacidad_ram">Capacidad de Ram (GB)</string>
+    <string name="precio">Precio</string>
+    <string name="guardar">Guardar</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="marca1">Nokia</string>
+    <string name="marca2">Huawei</string>
+    <string name="marca3">Apple</string>
+    <string name="marca4">Samsung</string>
+    <string-array name="marcas">
+        <item>@string/seleccione</item>
+        <item>@string/marca1</item>
+        <item>@string/marca2</item>
+        <item>@string/marca3</item>
+        <item>@string/marca4</item>
+    </string-array>
+    <string name="color1">Negro</string>
+    <string name="color2">Blanco</string>
+    <string name="color3">Gris</string>
+    <string-array name="colores">
+        <item>@string/seleccione</item>
+        <item>@string/color1</item>
+        <item>@string/color2</item>
+        <item>@string/color3</item>
+    </string-array>
+    <string name="sistema1">Android</string>
+    <string name="sistema2">iOs</string>
+    <string-array name="sistemas">
+        <item>@string/seleccione</item>
+        <item>@string/sistema1</item>
+        <item>@string/sistema2</item>
+    </string-array>
+    <string name="seleccione">Seleccione...</string>
+    <string name="listar">Listar</string>
+    <string name="ram">Ram</string>
+    <string name="reportes">Reportes</string>
+    <string name="enviar">Enviar</string>
+    <string name="reporte2">Reporte 2</string>
+    <string name="reporte3">Reporte 3</string>
+    <string name="reporte4">Reporte 4</string>
+    <string-array name="opReportes">
+        <item>@string/seleccione</item>
+        <item>@string/reporte2</item>
+        <item>@string/reporte3</item>
+        <item>@string/reporte4</item>
+    </string-array>
+</resources>
