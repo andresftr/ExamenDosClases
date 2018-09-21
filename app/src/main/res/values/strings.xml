@@ -54,6 +54,11 @@
         <item>@string/listar</item>
         <item>@string/reportes</item>
     </string-array>
-    <string name="guardado">!Celular Registrado Exitosamente¡</string>
+    <string name="guardado">¡Celular Registrado Exitosamente!</string>
     <string name="mensaje4">Cantidad celulares Apple Negro es:</string>
+    <string name="error_1">Escoge una Marca</string>
+    <string name="error_2">Escoge un Color</string>
+    <string name="error_3">Escoge un Sistema Operativo</string>
+    <string name="error_4">Ingresa un valor</string>
+    <string name="error_5">¡Valor Invalido!</string>
 </resources>

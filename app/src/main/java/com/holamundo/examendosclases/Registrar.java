@@ -42,18 +42,58 @@ public class Registrar extends Activity {
     }
     
     public void guardar(View v){
-        String marca, color, sistOperativo;
-        int ram, precio;
-        marca = cmbMarca.getSelectedItem().toString();
-        color = cmbColor.getSelectedItem().toString();
-        sistOperativo = cmbSistOp.getSelectedItem().toString();
-        ram = Integer.parseInt(txtRam.getText().toString());
-        precio = Integer.parseInt(txtPrecio.getText().toString());
+        if (validar()) {
+            String marca, color, sistOperativo;
+            int ram, precio;
+            marca = cmbMarca.getSelectedItem().toString();
+            color = cmbColor.getSelectedItem().toString();
+            sistOperativo = cmbSistOp.getSelectedItem().toString();
+            ram = Integer.parseInt(txtRam.getText().toString());
+            precio = Integer.parseInt(txtPrecio.getText().toString());
 
-        Celular cel = new Celular(marca,color,sistOperativo,ram,precio);
-        cel.guardar();
+            Celular cel = new Celular(marca, color, sistOperativo, ram, precio);
+            cel.guardar();
 
-        Toast.makeText(this,recursos.getString(R.string.guardado),Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, recursos.getString(R.string.guardado), Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public boolean validar(){
+        if (cmbMarca.getSelectedItemPosition()==0){
+            Toast.makeText(this,R.string.error_1,Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (cmbColor.getSelectedItemPosition()==0){
+            Toast.makeText(this,R.string.error_2,Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (cmbSistOp.getSelectedItemPosition()==0){
+            Toast.makeText(this,R.string.error_3,Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (txtRam.getText().toString().isEmpty()){
+            txtRam.setError(recursos.getString(R.string.error_4));
+            txtRam.requestFocus();
+            return false;
+        }
+        int ram = Integer.parseInt(txtRam.getText().toString());
+        if (ram<=0){
+            txtRam.setError(recursos.getString(R.string.error_5));
+            txtRam.requestFocus();
+            return false;
+        }
+        if (txtPrecio.getText().toString().isEmpty()){
+            txtPrecio.setError(recursos.getString(R.string.error_4));
+            txtPrecio.requestFocus();
+            return false;
+        }
+        int precio = Integer.parseInt(txtPrecio.getText().toString());
+        if (precio<=0){
+            txtPrecio.setError(recursos.getString(R.string.error_5));
+            txtPrecio.requestFocus();
+            return false;
+        }
+        return true;
     }
 
     public void limpiar(View v){
