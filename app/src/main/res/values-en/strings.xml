@@ -1,4 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ExamenDosClases</string>
+    <string name="opciones">Options</string>
+    <string name="registrar">Enter</string>
+    <string name="marca">Brand</string>
+    <string name="sistema_operativo">OS</string>
+    <string name="color">Color</string>
+    <string name="capacidad_ram">Ram Capacity (GB)</string>
+    <string name="precio">Price</string>
+    <string name="guardar">Save</string>
+    <string name="limpiar">Clear</string>
+    <string name="marca1">Nokia</string>
+    <string name="marca2">Huawei</string>
+    <string name="marca3">Apple</string>
+    <string name="marca4">Samsung</string>
+    <string name="color1">Black</string>
+    <string name="color2">White</string>
+    <string name="color3">Gray</string>
+    <string name="sistema1">Android</string>
+    <string name="sistema2">iOs</string>
+    <string name="seleccione">Choose...</string>
+    <string name="listar">List</string>
+    <string name="ram">Ram</string>
+    <string name="reportes">Reports</string>
+    <string name="enviar">Submit</string>
+    <string name="reporte2">Report 2</string>
+    <string name="reporte3">Report 3</string>
+    <string name="reporte4">Report 4</string>
+    <string name="guardado">¡Mobile Successfully Registered!</string>
+    <string name="mensaje4">Quantity Black Apple mobiles is:</string>
+    <string name="error_1">Choose a Brand</string>
+    <string name="error_2">Choose a Color</string>
+    <string name="error_3">Choose a OS</string>
+    <string name="error_4">Enter a value</string>
+    <string name="error_5">¡Invalid Value!</string>
 </resources>

@@ -55,6 +55,7 @@ public class Registrar extends Activity {
             cel.guardar();
 
             Toast.makeText(this, recursos.getString(R.string.guardado), Toast.LENGTH_SHORT).show();
+            borrar();
         }
     }
 
