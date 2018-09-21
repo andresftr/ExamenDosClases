@@ -33,9 +33,9 @@ public class ReporteDos extends Activity {
                 TextView c6 = new TextView(this);
 
                 c1.setText("" + pos++);
-                c2.setText(celulares.get(i).getColor());
-                c3.setText(celulares.get(i).getMarca());
-                c4.setText(celulares.get(i).getSistOp());
+                c2.setText(celulares.get(i).getMarca());
+                c3.setText(celulares.get(i).getSistOp());
+                c4.setText(celulares.get(i).getColor());
                 c5.setText(String.valueOf(celulares.get(i).getRam()));
                 c6.setText(String.valueOf(celulares.get(i).getPrecio()));
 
